@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="./exercicio.js" defer></script>
+  <title>Exercício</title>
+  <style>
+    body {
+      background-color: #ffffff; 
+    }
+  </style>
+</head>
+<body>
+  <h1>Exercício</h1>
+
+ 
+  <button onclick="mudarCorDeFundo()">Alterar a cor de fundo</button>
+
+ 
+  <form onsubmit="event.preventDefault(); adicionarItem();">
+    <input type="text" id="item" placeholder="Digite um item" required>
+    <button type="submit">Enviar</button>
+  </form>
+  <ul id="lista"></ul>
+
+  
+  <button onclick="alternarImagem()">Alternar Imagem</button>
+  <img id="imagem" src="./img/capa1.jpg" alt="Imagem">
+
+  
+  <button onclick="exibirMensagem()">Exibir Mensagem</button>
+  <p id="mensagem"></p>
+
+
+  
+  <button onclick="ocultarElemento()">Ocultar Elemento</button>
+  <div id="elemento-oculto">
+    Não liga para as imagens! Hahaha
+  </div>
+
+  <script src="exercicio-1.js"></script>
+</body>
+</html>
